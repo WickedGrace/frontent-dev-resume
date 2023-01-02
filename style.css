@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "Montserrat Regular";
+    src: url("../fonts/montserrat-regular/montserrat-regular.eot");
+    src: url("../fonts/montserrat-regular/montserrat-regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/montserrat-regular/montserrat-regular.otf") format("opentype"),
+        url("../fonts/montserrat-regular/montserrat-regular.svg") format("svg"),
+        url("../fonts/montserrat-regular/montserrat-regular.ttf") format("truetype"),
+        url("../fonts/montserrat-regular/montserrat-regular.woff") format("woff"),
+        url("../fonts/montserrat-regular/montserrat-regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato Regular";
+    src: url("../fonts/lato-regular/lato-regular.eot");
+    src: url("../fonts/lato-regular/lato-regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/lato-regular/lato-regular.otf") format("opentype"),
+        url("../fonts/lato-regular/lato-regular.svg") format("svg"),
+        url("../fonts/lato-regular/lato-regular.ttf") format("truetype"),
+        url("../fonts/lato-regular/lato-regular.woff") format("woff"),
+        url("../fonts/lato-regular/lato-regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Lato, Arial, sans-serif;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header .container {
+    max-width: 1140px;
+    display: flex;
+}
+
+.main {
+    padding: 50px;
+    background-color: rgb(233, 234, 233);
+}
+
+/* common */
+
+.paragraph {
+    text-align: justify;
+}
+
+.title {
+    font-family: Montserrat, Times New Roman, serif;
+}
+
+.footer {
+    margin-top: auto;
+    background-color: rgb(63, 50, 63);
+}
+
+/* header */
+
+.header {
+    background-color: rgb(63, 50, 63);
+}
+
+.userpic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 50px 75px 50px 50px;
+}
+
+.header .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.username {
+    margin-bottom: 5px;
+}
+
+/* main */
+
+.objective,
+.experience,
+.skills,
+.language {
+    background-color: rgb(233, 234, 233);
+}
+
+.objective {
+    margin-bottom: 50px;
+}
+
+.title {
+    padding-bottom: 25px;
+}
+
+.objective .text {
+    padding-bottom: 15px;
+}
+
+.experience .box {
+    display: flex;
+}
+
+.experience .title {}
+
+.experience .text {
+    padding-bottom: 25px;
+}
+
+.activity {
+    /* padding-right: 75px; */
+    white-space: nowrap;
+    min-width: 150px;
+}
+
+.language-list {
+    list-style: square;
+    color: rgb(229, 215, 211);
+    list-style-position: inside;
+}
+
+.language-list__item {
+    color: rgb(63, 50, 63);
+}
+
+.form {
+    background-color: rgb(229, 215, 211);
+}
+
+.form .title {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.form .box {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .box {
+    display: flex;
+    flex-direction: column;
+}
