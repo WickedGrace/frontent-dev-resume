@@ -31,10 +31,15 @@
     color: rgb(63, 50, 63);
 }
 
+html,
 .page {
+    height: 100%;
+}
+
+.wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100%;
 }
 
 .container {
@@ -45,6 +50,7 @@
 
 .main {
     background-color: rgb(233, 234, 233);
+    flex: 1 1 auto;
 }
 
 /* common */
@@ -55,6 +61,7 @@
 
 .title {
     font-family: Montserrat, Times New Roman, serif;
+    padding-bottom: 25px;
 }
 
 .text {
@@ -67,25 +74,21 @@
     background-color: rgb(63, 50, 63);
 }
 
-.header .container {
+.header__container {
     display: flex;
 }
 
-.header .box {
+.header__box {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.userpic {
+.header__userpic {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     margin: 50px 75px 50px 50px;
-}
-
-.username {
-    margin-bottom: 5px;
 }
 
 /* main */
@@ -94,38 +97,29 @@
     background-color: rgb(233, 234, 233);
 }
 
-.objective {
-    margin-bottom: 50px;
-}
-
-.title,
-.experience .paragraph {
+.experience__box:not(:last-child) {
     padding-bottom: 25px;
 }
 
-.objective .paragraph {
+.objective__container>*:nth-child(2) {
     padding-bottom: 15px;
 }
 
-.experience .box {
+.experience__box {
     display: flex;
 }
 
-.activity {
+.experience__activity {
     min-width: 150px;
 }
 
-.skills .paragraph {
-    padding-bottom: 25px;
-}
-
-.language-list {
+.language__list {
     list-style: square;
     color: rgb(229, 215, 211);
     list-style-position: inside;
 }
 
-.language-list__item {
+.language__item {
     color: rgb(63, 50, 63);
 }
 
@@ -140,32 +134,26 @@
     background-color: rgb(229, 215, 211);
 }
 
-.contact-form .title {
+.contact-form__title {
     text-align: center;
-    padding-top: 25px;
 }
 
-.form {
+.contact-form__form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.form .title {
-    text-align: center;
-    padding-top: 25px;
-}
-
-.form .box {
+.contact-form__box {
     display: flex;
 }
 
-.box-inner {
+.contact-form__box-inner {
     display: flex;
     flex-direction: column;
 }
 
-.form-input {
+.contact-form__input {
     border: none;
     border-bottom: 3px solid rgb(63, 50, 63);
     border-color: rgb(190, 177, 174);
@@ -174,13 +162,13 @@
     width: 300px;
 }
 
-.textarea {
+.contact-form__textarea {
     resize: none;
     width: 600px;
 }
 
-.btn {
-    margin: 25px 0;
+.contact-form__btn {
+    margin-top: 25px;
     min-height: 40px;
     min-width: 150px;
     background-color: rgb(63, 50, 63);
@@ -188,22 +176,23 @@
     color: rgb(227, 234, 243);
 }
 
-.contacts .title {
+.contacts__title {
     text-align: center;
-    padding: 25px 0;
+    padding-bottom: 25px;
 }
 
-.contacts-list {
+.contacts__list {
     display: flex;
     list-style: none;
     justify-content: space-evenly;
     padding-bottom: 25px;
 }
 
-.contacts-list__item a {
+.contacts__item a {
     text-decoration: none;
+    color: rgb(227, 234, 243);
 }
 
-.copyright {
+.contacts__copyright {
     text-align: center;
 }
