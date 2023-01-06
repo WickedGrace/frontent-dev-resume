@@ -28,6 +28,8 @@
     margin: 0;
     padding: 0;
     font-family: Lato, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 162%;
     color: rgb(63, 50, 63);
 }
 
@@ -64,6 +66,16 @@ html,
     padding-bottom: 25px;
 }
 
+.caption_m {
+    font-size: 28px;
+    line-height: 164%;
+}
+
+.caption_s {
+    font-size: 20px;
+    line-height: 150%;
+}
+
 .text {
     color: rgb(227, 234, 243);
 }
@@ -84,6 +96,11 @@ html,
     justify-content: center;
 }
 
+.header__title {
+    font-size: 36px;
+    line-height: 128%;
+}
+
 .header__userpic {
     width: 200px;
     height: 200px;
@@ -97,12 +114,12 @@ html,
     background-color: rgb(233, 234, 233);
 }
 
-.experience__box:not(:last-child) {
-    padding-bottom: 25px;
-}
-
 .objective__container>*:nth-child(2) {
     padding-bottom: 15px;
+}
+
+.experience__box:not(:last-child) {
+    padding-bottom: 25px;
 }
 
 .experience__box {
@@ -113,10 +130,14 @@ html,
     min-width: 150px;
 }
 
-.language__list {
+.language__list li {
     list-style: square;
     color: rgb(229, 215, 211);
     list-style-position: inside;
+}
+
+.language__list li:first-child {
+    padding-bottom: 10px;
 }
 
 .language__item {
@@ -174,6 +195,7 @@ html,
     background-color: rgb(63, 50, 63);
     border: none;
     color: rgb(227, 234, 243);
+    padding: 15px 75px;
 }
 
 .contacts__title {
